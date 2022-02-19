@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="flex flex-row bg-neutral-900">
+      <div className="flex flex-row bg-neutral-900 h-full">
         <Links />
         <Routers />
       </div>

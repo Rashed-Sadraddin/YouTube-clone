@@ -9,51 +9,93 @@ import { ReactComponent as Library } from "./Library.svg";
 
 export const Links = () => {
   return (
-    <div className="flex flex-col h-full w-[70px] bg-neutral-800">
-      <Link to={"/home"}>home</Link>
+    <div className="flex flex-col [557px] w-[70px] h-full bg-neutral-800">
+      {/* <Link to={"/home"}>home</Link> */}
 
-      <NavLink to="/2">
+      <NavLink to="/">
         {({ isActive }) =>
           isActive ? (
-            <Home className=" fill-white stroke-white h-6" />
+            <div className="flex flex-col">
+              <Home className=" fill-white stroke-white h-6  mx-auto mt-3.5" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">Home</p>
+            </div>
           ) : (
-            <Home className="fill-transparent stroke-white stroke-1 h-6 " />
+            <div className="flex flex-col">
+              <Home className="fill-transparent stroke-white stroke-1 h-6 mx-auto mt-3.5" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">Home</p>
+            </div>
           )
         }
       </NavLink>
-      <NavLink to="/2">
+      <NavLink to="/Explore">
         {({ isActive }) =>
           isActive ? (
-            <Explore className="fill-white stroke-neutral-800 h-6 bg-white rounded-full" />
+            <div className="flex flex-col">
+              <Explore className="fill-white stroke-neutral-800 h-6 bg-white rounded-full mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
+                Explore
+              </p>
+            </div>
           ) : (
-            <Explore className="fill-transparent stroke-white stroke-1 h-6 " />
+            <div className="flex flex-col">
+              <Explore className="fill-transparent stroke-white stroke-1 h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
+                Explore
+              </p>
+            </div>
           )
         }
       </NavLink>
-      <NavLink to="/2">
+      <NavLink to="/Shorts">
         {({ isActive }) =>
           isActive ? (
-            <Shorts className="fill-white stroke-white h-6" />
+            <div className="flex flex-col">
+              <Shorts className="fill-white stroke-white h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">Shorts</p>
+            </div>
           ) : (
-            <Shorts className="fill-transparent stroke-white stroke-1 h-6 " />
+            <div className="flex flex-col">
+              <Shorts className="fill-transparent stroke-white stroke-1 h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">Shorts</p>
+            </div>
           )
         }
       </NavLink>
-      <NavLink to="/2">
+      <NavLink to="/Subscription">
         {({ isActive }) =>
           isActive ? (
-            <Subscription className="fill-white stroke-white h-6" />
+            <div className="flex flex-col">
+              <Subscription className="fill-white stroke-white h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
+                Subscriptions
+              </p>
+            </div>
           ) : (
-            <Subscription className="fill-transparent stroke-white stroke-1 h-6 " />
+            <div className="flex flex-col">
+              <Subscription className="fill-transparent stroke-white stroke-1 h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
+                Subscriptions
+              </p>
+            </div>
           )
         }
       </NavLink>
-      <NavLink to="/2">
+      <NavLink to="/Library">
         {({ isActive }) =>
           isActive ? (
-            <Library className="fill-white stroke-white h-6" />
+            <div className="flex flex-col">
+              <Library className="fill-white stroke-white h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
+                Library
+              </p>
+            </div>
           ) : (
-            <Library className="fill-transparent stroke-white stroke-1 h-6 " />
+            <div className="flex flex-col">
+              <Library className="fill-transparent stroke-white stroke-1 h-6 mx-auto mt-2" />
+              <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
+                Library
+              </p>
+            </div>
           )
         }
       </NavLink>
