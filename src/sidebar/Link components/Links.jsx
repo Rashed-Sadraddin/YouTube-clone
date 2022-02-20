@@ -1,7 +1,7 @@
-import { Link, NavLink } from "react-router-dom";
-import { StepBackwardOutlined, UpCircleFilled } from "@ant-design/icons";
+import { NavLink } from "react-router-dom";
 import { ReactComponent as Home} from "./Home.svg";
 import { ReactComponent as Explore } from "./Explore.svg";
+import { ReactComponent as Explore2 } from "./Explore2.svg";
 import { ReactComponent as Shorts } from "./Shorts.svg";
 import { ReactComponent as Subscription } from "./Subscription.svg";
 import { ReactComponent as Library } from "./Library.svg";
@@ -31,14 +31,14 @@ export const Links = () => {
         {({ isActive }) =>
           isActive ? (
             <div className="flex flex-col">
-              <Explore className="fill-white stroke-neutral-800 h-6 bg-white rounded-full mx-auto mt-2" />
+              <Explore2 className="fill-white h-6  mt-2 mx-auto" />
               <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
                 Explore
               </p>
             </div>
           ) : (
             <div className="flex flex-col">
-              <Explore className="fill-transparent stroke-white stroke-1 h-6 mx-auto mt-2" />
+              <Explore className="fill-transparent stroke-white  h-6 mx-auto mt-2" />
               <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
                 Explore
               </p>
