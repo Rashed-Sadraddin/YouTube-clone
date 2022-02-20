@@ -3,8 +3,11 @@ import { ReactComponent as Home} from "./Home.svg";
 import { ReactComponent as Explore } from "./Explore.svg";
 import { ReactComponent as Explore2 } from "./Explore2.svg";
 import { ReactComponent as Shorts } from "./Shorts.svg";
+import { ReactComponent as Shorts2 } from "./Shorts2.svg";
 import { ReactComponent as Subscription } from "./Subscription.svg";
+import { ReactComponent as Subscription2 } from "./Subscription2.svg";
 import { ReactComponent as Library } from "./Library.svg";
+import { ReactComponent as Library2 } from "./Library2.svg";
 
 
 export const Links = () => {
@@ -50,7 +53,7 @@ export const Links = () => {
         {({ isActive }) =>
           isActive ? (
             <div className="flex flex-col">
-              <Shorts className="fill-white stroke-white h-6 mx-auto mt-2" />
+              <Shorts2 className="fill-white  h-6 mx-auto mt-2" />
               <p className="mt-1 mb-5 mx-auto text-[10px] text-white">Shorts</p>
             </div>
           ) : (
@@ -65,7 +68,7 @@ export const Links = () => {
         {({ isActive }) =>
           isActive ? (
             <div className="flex flex-col">
-              <Subscription className="fill-white stroke-white h-6 mx-auto mt-2" />
+              <Subscription2 className="fill-white h-6 mx-auto mt-2" />
               <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
                 Subscriptions
               </p>
@@ -84,7 +87,7 @@ export const Links = () => {
         {({ isActive }) =>
           isActive ? (
             <div className="flex flex-col">
-              <Library className="fill-white stroke-white h-6 mx-auto mt-2" />
+              <Library2 className="fill-white h-6 mx-auto mt-2" />
               <p className="mt-1 mb-5 mx-auto text-[10px] text-white">
                 Library
               </p>
