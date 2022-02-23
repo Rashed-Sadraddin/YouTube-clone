@@ -8,10 +8,10 @@ import "antd/dist/antd.css";
 const Header=()=>{
 
     return (
-      <div className="bg-neutral-800  w-full h-[10.3%] flex flex-row justify-between p-2">
+      <div className="bg-neutral-800  w-full h-[10.3%] flex flex-row justify-between items-center p-2">
         <div className="flex flex-row justify-around text-white mr-9">
           <MenuOutlined className="text-xl mx-4 my-auto text-white" />
-          <NavLink className="pt-1.5" to="/">
+          <NavLink className="" to="/">
             <Main_logo className=" w-[92px] h-8 mx-2  fill-white" />
           </NavLink>
         </div>

@@ -1,6 +1,13 @@
+import Links from "../Link components/Links/Links";
 
 const Shorts = () => {
-  return <h1 className="text-white">Shorts</h1>;
-}
+  return (
+    <>
+      <div className="flex flex-row bg-neutral-900 h-full">
+        <Links />
+      </div>
+    </>
+  );
+};
 
-export default Shorts
+export default Shorts;

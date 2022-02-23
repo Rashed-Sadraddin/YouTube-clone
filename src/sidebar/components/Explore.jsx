@@ -1,7 +1,12 @@
+import Links from "../Link components/Links/Links";
 
 const Explore = () => {
   return (
-    <h1 className="text-white">Explore</h1>
-  )
-}
-export default Explore
+    <>
+      <div className="flex flex-row bg-neutral-900 h-full">
+        <Links />
+      </div>
+    </>
+  );
+};
+export default Explore;

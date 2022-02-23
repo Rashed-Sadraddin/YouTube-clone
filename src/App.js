@@ -12,7 +12,7 @@ function App() {
 
       <Header />
       <div className="flex flex-row bg-neutral-900 h-full">
-        <Links />
+        {/* <Links /> */}
         {/* <video
         id="v"
           src={video}
@@ -26,7 +26,7 @@ function App() {
           // onplay={fcn()}
         /> */}
         
-        <Routers />
+        <Routers/>
         
       </div>
     </>

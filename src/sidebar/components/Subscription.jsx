@@ -1,6 +1,13 @@
+import Links from "../Link components/Links/Links";
 
 const Subscription = () => {
-  return <h1 className="text-white">Subscription</h1>;
-}
+  return (
+    <>
+      <div className="flex flex-row bg-neutral-900 h-full">
+        <Links />
+      </div>
+    </>
+  );
+};
 
-export default Subscription
+export default Subscription;

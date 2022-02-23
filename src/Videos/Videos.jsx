@@ -2,6 +2,7 @@
 const Videos = [
   {
     id: "1",
+    video_link:'"/one"',
     link: "https://s1.1zoom.me/big3/718/Logo_Emblem_Youtube_Red_background_529384_1920x1080.jpg",
     pagepic:
       "https://static.wikia.nocookie.net/youtube/images/4/43/Programming_with_Mosh.jpg",
