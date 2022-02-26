@@ -24,7 +24,7 @@ const Home =()=>{return (
             <p className="text-neutral-400 mb-0">{props.pagename} <CheckCircleFilled className=""/></p>
             <span className="text-neutral-400">{props.view} views . {props.time} ago</span>
             </div>
-            <div className="float-right">
+            <div className="">
               <button>
           <EllipsisOutlined rotate={90} className=" text-lg h-4 w-4 float-right"/>
           </button>
