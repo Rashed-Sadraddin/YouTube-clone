@@ -15,7 +15,7 @@ const Routers = () => {
       <Route path="/Subscription" element={<Subscription />}></Route>
       <Route path="/Library" element={<Library />}></Route>
 
-      <Route path="/one" element={<Video_one />}></Route>
+      <Route path="/one/:videoid" element={<Video_one />}></Route>
     </Routes>
   );
 };

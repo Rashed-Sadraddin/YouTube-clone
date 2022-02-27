@@ -12,11 +12,14 @@ const Home =()=>{return (
   <div className=" flex flex-row flex-wrap w-[94%] h-[100%] overflow-y-auto  px-4 ">
     {Videos.map((props) => {
       return (
-        <div className="static w-[285px] h-[280px]">
-        <NavLink to="/one">
+        <div key={props.id} className="static w-[285px] h-[280px]">
+        <NavLink to={`/one/${props.id}`}>
         <div 
-        className="hover:relative group hover:bg-neutral-800 mx-2 my-6  w-[270px] hover:scale-[1.3] hover:duration-[0.5s] hover:delay-[1s] h-[240px] hover:h-[330px] overflow-hidden">
-          <img className="mb-3" src={props.link}></img>
+        className="hover:relative group  hover:bg-neutral-800 mx-2 my-6 h-[240px] w-[270px] hover:scale-[1.15] hover:duration-[0.5s] hover:delay-[1s]  hover:h-[330px] overflow-hidden">
+          <img controls autoPlay className="mb-3 group-hover:mb-0 group-hover:w-0 group-hover:h-0  " src={props.link}/>
+
+           <video src={props.video_link} className="hidden group-hover:flex group-hover:delay-1000 mb-3 mt-0" autoPlay muted/>
+
           <div className=" group-hover:pr-2 group-hover:pl-2 group-hover:delay-[1s] group-hover:duration-[0.5s] flex  text-white">
           <img className="float-left w-10 h-10 rounded-full mr-3" src={props.pagepic}></img>
           <div className="float-left w-[70%] ">

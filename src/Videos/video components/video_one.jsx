@@ -1,4 +1,4 @@
-import Video1 from "../a.mp4";
+import Video1 from "../b.mp4";
 import Videos from "../Videos";
 import { NavLink } from "react-router-dom";
 import { CheckCircleFilled, EllipsisOutlined } from "@ant-design/icons";
@@ -10,13 +10,19 @@ import { ReactComponent as SHARE } from "./Video Tools/SHARE.svg";
 import { ReactComponent as CLIP } from "./Video Tools/CLIP.svg";
 import { ReactComponent as SAVE } from "./Video Tools/SAVE.svg";
 
+import { useParams } from "react-router-dom";
 
 const Video_one = () => {
+
+  let param=useParams()
+  
+  const myvideo=Videos.filter((el)=>el.id===param.videoid)
+  console.log(myvideo)
   return (
     <div className="flex flex-row justify-between  overflow-y-auto w[100%] px-14 pt-6">
       <div>
         <div className="w-[716px] h-[403px]">
-         <video src={Video1} controls className="w-[100%] h-[100%]" /> 
+         <video src={myvideo[0].video_link} controls className="w-[100%] h-[100%]" /> 
         </div>
         
         <h1 className="text-white mt-6">Title</h1>
@@ -41,7 +47,7 @@ const Video_one = () => {
       <div className="flex flex-col pt-2 ml-6 w-[475px]">
         {Videos.map((props) => {
           return (
-            <NavLink to="/one">
+            <NavLink to={`/one/${props.id}`}>
               <div className="group flex flex-row mr-2 my-1 h-[94px] w-[401] ">
                 <img className="w-[168px] pr-2" src={props.link}></img>
           <div className=" w-[200px] flex flex-col text-white">

@@ -6,10 +6,8 @@ import video from "./Videos/a.mp4";
 import Image from "./Videos/a.png";
 
 function App() {
-
   return (
     <>
-
       <Header />
       <div className="flex flex-row bg-neutral-900 h-full">
         {/* <Links /> */}
@@ -25,9 +23,8 @@ function App() {
           preload="auto"
           // onplay={fcn()}
         /> */}
-        
-        <Routers/>
-        
+
+        <Routers />
       </div>
     </>
   );

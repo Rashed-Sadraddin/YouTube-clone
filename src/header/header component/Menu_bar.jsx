@@ -16,7 +16,7 @@ const Menu_bar = (props) => {
   return (
     <div
       onClick={props.menu_bar_fcn}
-      className="menu   absolute top-0 right-0 w-screen h-screen"
+      className="menu  z-50 absolute top-0 right-0 w-screen h-screen"
     >
       <div className="bg-neutral-800 text-white absolute top-0 left-0 w-60 h-[100%]">
         <div className="flex flex-row justify-around text-white p-2 mb-4">
