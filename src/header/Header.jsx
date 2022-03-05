@@ -11,6 +11,7 @@ import Upload from "./header component/Upload";
 import Microphone from "./header component/Microphone";
 import Menu_bar from "./header component/Menu_bar";
 
+import profilpic from "./header component/sidebar/profilpicture.jpg";
 
 const Header=()=>{
 
@@ -46,6 +47,7 @@ set_profile(false);set_microphone(false);
 set_notification(false);set_tv(false);set_upload(false);}
 
 
+
     return (
       <div className="bg-neutral-800  w-full h-[10.3%] flex flex-row justify-between items-center p-2">
         <div className="flex flex-row justify-around text-white mr-9">
@@ -76,9 +78,9 @@ set_notification(false);set_tv(false);set_upload(false);}
           <button onClick={profile_fcn}>
             <img
               id="img"
-              className="w-9 h-8 text-xl mx-4 my-auto rounded-full"
+              className="w-8 h-8 text-xl mx-4 my-auto rounded-full"
               alt="Avatar image"
-              src="https://pixfeeds.com/images/hair-care/men/1280-492496186-senior-business-man.jpg"
+              src={profilpic}
             ></img>
           </button>
           {profile && <Profile profile_fcn={profile_fcn}/>}
@@ -87,6 +89,7 @@ set_notification(false);set_tv(false);set_upload(false);}
           {upload && <Upload />}
           
         </div>
+        
       </div>
     );}
 
