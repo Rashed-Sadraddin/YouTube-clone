@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/YouTube-clone/static/css/main.e5675078.css",
-    "main.js": "/YouTube-clone/static/js/main.f92be2ea.js",
+    "main.js": "/YouTube-clone/static/js/main.afee71d4.js",
     "static/js/787.a3118e53.chunk.js": "/YouTube-clone/static/js/787.a3118e53.chunk.js",
     "static/media/تحضيرات واستعدادات خاصة داخل الجناح السعودي للاحتفال بيوم التأسيس.mp4": "/YouTube-clone/static/media/تحضيرات واستعدادات خاصة داخل الجناح السعودي للاحتفال بيوم التأسيس.5117f3e76621ca209a72.mp4",
     "static/media/Logitech G333 Gaming Earphones - سەماعەی بستۆلانە.mp4": "/YouTube-clone/static/media/Logitech G333 Gaming Earphones - سەماعەی بستۆلانە.52267d185a892463ce8d.mp4",
@@ -55,11 +55,11 @@
     "static/media/Library2.svg": "/YouTube-clone/static/media/Library2.7c3c2534223de20e350472889972c73a.svg",
     "static/media/Home.svg": "/YouTube-clone/static/media/Home.d6e786cbe53a02b21e12890e6020163a.svg",
     "main.e5675078.css.map": "/YouTube-clone/static/css/main.e5675078.css.map",
-    "main.f92be2ea.js.map": "/YouTube-clone/static/js/main.f92be2ea.js.map",
+    "main.afee71d4.js.map": "/YouTube-clone/static/js/main.afee71d4.js.map",
     "787.a3118e53.chunk.js.map": "/YouTube-clone/static/js/787.a3118e53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5675078.css",
-    "static/js/main.f92be2ea.js"
+    "static/js/main.afee71d4.js"
   ]
 }
